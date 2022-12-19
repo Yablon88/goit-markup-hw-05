@@ -39,6 +39,7 @@ ul {
 
 a {
   text-decoration: none;
+  
 }
 
 .visually-hidden {
@@ -94,8 +95,11 @@ a {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 12px;
-}
+  }
 
+  p.primary-text{
+    color: var(--primary-Text-color);
+  }
 .web {
   color: var(--Primary-Brand-color);
 }
@@ -133,6 +137,7 @@ a {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 24px;
+ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .site-nav .link:hover,
@@ -159,6 +164,7 @@ a {
   font-size: 16px;
   line-height: 1.15;
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .contact:hover,
 .contact:focus {
@@ -235,6 +241,7 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
+   transition: 256ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden{
@@ -254,6 +261,7 @@ a {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+ 
 }
 
 /* ф'ючерси */
@@ -367,10 +375,7 @@ a {
   line-height: 1.19;
 
   letter-spacing: 0.04em;
-
-  font-family: "Roboto";
-  font-style: 400;
-  cursor: pointer;
+   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-primary:hover,
@@ -396,6 +401,8 @@ a {
   font-family: "Roboto";
   font-style: 400;
   cursor: pointer;
+
+   transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-secondary:hover,
@@ -413,6 +420,8 @@ a {
   border-radius: 50%;
   margin-top: 24px;
   margin-left: 360px;
+  background-color:  var(--Accent-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 
 }
 
@@ -436,6 +445,7 @@ a {
   color: var(--Subtle-Text-color);
   border: 1px solid var(--Subtle-Text-color);
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -498,7 +508,7 @@ a {
   background-color: var(--Primary-Brand-color);
 
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-image:hover .project-hiden,
 .project-image:focus .project-hiden {
@@ -523,6 +533,9 @@ a {
   padding-bottom: 16px;
   border: 0.5px solid var(--Light-color);
   border-top: none;
+}
+.project-description.primary-text{
+  color: var(--primary-Text-color);
 }
 
 /* footer */
@@ -573,6 +586,8 @@ a {
   justify-content: center;
   align-items: center;
   fill: currentColor;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-links:hover,
 .footer-links:focus {
