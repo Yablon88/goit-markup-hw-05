@@ -137,7 +137,7 @@ a {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 24px;
- transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .site-nav .link:hover,
@@ -164,7 +164,7 @@ a {
   font-size: 16px;
   line-height: 1.15;
   text-decoration: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .contact:hover,
 .contact:focus {
@@ -241,7 +241,7 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-   transition: 256ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden{
@@ -375,7 +375,8 @@ a {
   line-height: 1.19;
 
   letter-spacing: 0.04em;
-   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   cursor: pointer;
 }
 
 .button-primary:hover,
@@ -401,8 +402,9 @@ a {
   font-family: "Roboto";
   font-style: 400;
   cursor: pointer;
+  
 
-   transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-secondary:hover,
@@ -414,7 +416,7 @@ a {
 }
 
 .button-modal {
-
+  display: flex;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -422,7 +424,15 @@ a {
   margin-left: 360px;
   background-color:  var(--Accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  
+  cursor: pointer;
 
+  justify-content: center;
+  align-items: center;
+}
+.button-modal-icon{
+  width: 8px;
+  height: 8px;
 }
 
 
@@ -445,7 +455,7 @@ a {
   color: var(--Subtle-Text-color);
   border: 1px solid var(--Subtle-Text-color);
   border-radius: 4px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -508,7 +518,7 @@ a {
   background-color: var(--Primary-Brand-color);
 
   transform: translateY(100%);
-  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-image:hover .project-hiden,
 .project-image:focus .project-hiden {
@@ -533,6 +543,7 @@ a {
   padding-bottom: 16px;
   border: 0.5px solid var(--Light-color);
   border-top: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-description.primary-text{
   color: var(--primary-Text-color);
@@ -587,7 +598,7 @@ a {
   align-items: center;
   fill: currentColor;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-links:hover,
 .footer-links:focus {
