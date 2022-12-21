@@ -137,7 +137,7 @@ a {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 24px;
- transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .site-nav .link:hover,
@@ -164,7 +164,7 @@ a {
   font-size: 16px;
   line-height: 1.15;
   text-decoration: none;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .contact:hover,
 .contact:focus {
@@ -241,7 +241,7 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden{
@@ -320,7 +320,7 @@ a {
   background-color: var(--primary-white-color);
 }
 
-.partner img {
+img {
   display: block;
 }
 .team {
@@ -375,7 +375,7 @@ a {
   line-height: 1.19;
 
   letter-spacing: 0.04em;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
    cursor: pointer;
 }
 
@@ -455,7 +455,7 @@ a {
   color: var(--Subtle-Text-color);
   border: 1px solid var(--Subtle-Text-color);
   border-radius: 4px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -491,17 +491,22 @@ a {
   gap: 48px 24px;
 }
 
+
+.project {
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+}
+.project-image {
+ display: block;
+}
+
+
 .project:hover,
 .project:focus {
+  
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
-.project {
-}
-.project-image {
-}
-
 .project-wrapper {
   position: relative;
   overflow: hidden;
@@ -520,9 +525,10 @@ a {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-image:hover .project-hiden,
-.project-image:focus .project-hiden {
+.project:hover .project-hiden,
+.project:focus .project-hiden {
   transform: translateY(0);
+  
 }
 
 .project-hiden-text {
@@ -539,11 +545,11 @@ a {
 
 .project-description {
   padding-left: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   border: 0.5px solid var(--Light-color);
   border-top: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 .project-description.primary-text{
   color: var(--primary-Text-color);
